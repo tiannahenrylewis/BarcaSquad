@@ -20,9 +20,12 @@
 		91EBC38C22A0841100EEE2F1 /* UITableView+ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBC38B22A0841100EEE2F1 /* UITableView+ReusableView.swift */; };
 		91EBC38E22A0863300EEE2F1 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBC38D22A0863300EEE2F1 /* PlayerViewModel.swift */; };
 		91EBC39222A0970D00EEE2F1 /* FCBarcelona.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91EBC39122A0970D00EEE2F1 /* FCBarcelona.ttf */; };
+		CD77D844A99B969D574E16FB /* Pods_BarcaSquad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3846C2411C08792AE6ABCB /* Pods_BarcaSquad.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E3846C2411C08792AE6ABCB /* Pods_BarcaSquad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarcaSquad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		872B17A27BD63BE2C8EAAD51 /* Pods-BarcaSquad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarcaSquad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BarcaSquad/Pods-BarcaSquad.debug.xcconfig"; sourceTree = "<group>"; };
 		91EBC36222A03BF200EEE2F1 /* BarcaSquad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcaSquad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EBC36522A03BF200EEE2F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91EBC36722A03BF200EEE2F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		91EBC38B22A0841100EEE2F1 /* UITableView+ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ReusableView.swift"; sourceTree = "<group>"; };
 		91EBC38D22A0863300EEE2F1 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 		91EBC39122A0970D00EEE2F1 /* FCBarcelona.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FCBarcelona.ttf; sourceTree = "<group>"; };
+		CABCECE63CDBE7AD20D52918 /* Pods-BarcaSquad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarcaSquad.release.xcconfig"; path = "Pods/Target Support Files/Pods-BarcaSquad/Pods-BarcaSquad.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD77D844A99B969D574E16FB /* Pods_BarcaSquad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D5419BF3A8DB3C2E49B9934 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E3846C2411C08792AE6ABCB /* Pods_BarcaSquad.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60F33E4463B3D7B78AB434CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				872B17A27BD63BE2C8EAAD51 /* Pods-BarcaSquad.debug.xcconfig */,
+				CABCECE63CDBE7AD20D52918 /* Pods-BarcaSquad.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		91EBC35922A03BF200EEE2F1 = {
 			isa = PBXGroup;
 			children = (
 				91EBC36422A03BF200EEE2F1 /* BarcaSquad */,
 				91EBC36322A03BF200EEE2F1 /* Products */,
+				60F33E4463B3D7B78AB434CC /* Pods */,
+				4D5419BF3A8DB3C2E49B9934 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91EBC37422A03BF400EEE2F1 /* Build configuration list for PBXNativeTarget "BarcaSquad" */;
 			buildPhases = (
+				CC52E7E8083A5FD9BE47517D /* [CP] Check Pods Manifest.lock */,
 				91EBC35E22A03BF200EEE2F1 /* Sources */,
 				91EBC35F22A03BF200EEE2F1 /* Frameworks */,
 				91EBC36022A03BF200EEE2F1 /* Resources */,
+				AD5A9CD85582599A5FC23D87 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,6 +205,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD5A9CD85582599A5FC23D87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BarcaSquad/Pods-BarcaSquad-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BarcaSquad/Pods-BarcaSquad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC52E7E8083A5FD9BE47517D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BarcaSquad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		91EBC35E22A03BF200EEE2F1 /* Sources */ = {
@@ -336,6 +401,7 @@
 		};
 		91EBC37522A03BF400EEE2F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 872B17A27BD63BE2C8EAAD51 /* Pods-BarcaSquad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -354,6 +420,7 @@
 		};
 		91EBC37622A03BF400EEE2F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CABCECE63CDBE7AD20D52918 /* Pods-BarcaSquad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
