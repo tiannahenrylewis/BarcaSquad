@@ -12,12 +12,21 @@ import UIKit
 struct Theme {
 
     static func apply(to window: UIWindow) {
+
+        //Request a list of fonts available to determine the name of custom fonts
+        for family in UIFont.familyNames.sorted() {
+            let names = UIFont.fontNames(forFamilyName: family)
+            print("Family: \(family) Font names: \(names)")
+        }
+
         window.tintColor = Colours.garnet
 
-        let tabBar = UITabBar.appearance()
-        tabBar.barTintColor = Colours.blue
+        //let tabBar = UITabBar.appearance()
 
-    
+        let navBar = UINavigationBar.appearance()
+        navBar.prefersLargeTitles = true
+//        navBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Arial", size: 20)!]
+
     }
 
     struct Colours {

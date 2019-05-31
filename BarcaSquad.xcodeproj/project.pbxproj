@@ -12,9 +12,14 @@
 		91EBC36B22A03BF200EEE2F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EBC36922A03BF200EEE2F1 /* Main.storyboard */; };
 		91EBC36D22A03BF400EEE2F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91EBC36C22A03BF400EEE2F1 /* Assets.xcassets */; };
 		91EBC37022A03BF400EEE2F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EBC36E22A03BF400EEE2F1 /* LaunchScreen.storyboard */; };
-		91EBC37E22A03EC700EEE2F1 /* PlayerResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBC37D22A03EC700EEE2F1 /* PlayerResultCell.swift */; };
 		91EBC38022A03F8800EEE2F1 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBC37F22A03F8800EEE2F1 /* Theme.swift */; };
 		91EBC38322A0432100EEE2F1 /* Squad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EBC38222A0432100EEE2F1 /* Squad.storyboard */; };
+		91EBC38522A07F6C00EEE2F1 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBC38422A07F6C00EEE2F1 /* PlayerCell.swift */; };
+		91EBC38722A0801000EEE2F1 /* SquadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBC38622A0801000EEE2F1 /* SquadViewController.swift */; };
+		91EBC38A22A0832500EEE2F1 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBC38922A0832500EEE2F1 /* ReusableView.swift */; };
+		91EBC38C22A0841100EEE2F1 /* UITableView+ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBC38B22A0841100EEE2F1 /* UITableView+ReusableView.swift */; };
+		91EBC38E22A0863300EEE2F1 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBC38D22A0863300EEE2F1 /* PlayerViewModel.swift */; };
+		91EBC39222A0970D00EEE2F1 /* FCBarcelona.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91EBC39122A0970D00EEE2F1 /* FCBarcelona.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +30,14 @@
 		91EBC36C22A03BF400EEE2F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91EBC36F22A03BF400EEE2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91EBC37122A03BF400EEE2F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91EBC37D22A03EC700EEE2F1 /* PlayerResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerResultCell.swift; sourceTree = "<group>"; };
 		91EBC37F22A03F8800EEE2F1 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		91EBC38222A0432100EEE2F1 /* Squad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Squad.storyboard; sourceTree = "<group>"; };
+		91EBC38422A07F6C00EEE2F1 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		91EBC38622A0801000EEE2F1 /* SquadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadViewController.swift; sourceTree = "<group>"; };
+		91EBC38922A0832500EEE2F1 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		91EBC38B22A0841100EEE2F1 /* UITableView+ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ReusableView.swift"; sourceTree = "<group>"; };
+		91EBC38D22A0863300EEE2F1 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		91EBC39122A0970D00EEE2F1 /* FCBarcelona.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FCBarcelona.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +73,13 @@
 				91EBC36522A03BF200EEE2F1 /* AppDelegate.swift */,
 				91EBC37F22A03F8800EEE2F1 /* Theme.swift */,
 				91EBC36722A03BF200EEE2F1 /* ViewController.swift */,
-				91EBC37D22A03EC700EEE2F1 /* PlayerResultCell.swift */,
 				91EBC38122A042F100EEE2F1 /* Squad */,
 				91EBC36922A03BF200EEE2F1 /* Main.storyboard */,
-				91EBC36C22A03BF400EEE2F1 /* Assets.xcassets */,
 				91EBC36E22A03BF400EEE2F1 /* LaunchScreen.storyboard */,
 				91EBC37122A03BF400EEE2F1 /* Info.plist */,
+				91EBC38822A080C900EEE2F1 /* Utility */,
+				91EBC38F22A095A400EEE2F1 /* Resources */,
+				91EBC36C22A03BF400EEE2F1 /* Assets.xcassets */,
 			);
 			path = BarcaSquad;
 			sourceTree = "<group>";
@@ -77,8 +88,28 @@
 			isa = PBXGroup;
 			children = (
 				91EBC38222A0432100EEE2F1 /* Squad.storyboard */,
+				91EBC38D22A0863300EEE2F1 /* PlayerViewModel.swift */,
+				91EBC38422A07F6C00EEE2F1 /* PlayerCell.swift */,
+				91EBC38622A0801000EEE2F1 /* SquadViewController.swift */,
 			);
 			path = Squad;
+			sourceTree = "<group>";
+		};
+		91EBC38822A080C900EEE2F1 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				91EBC38922A0832500EEE2F1 /* ReusableView.swift */,
+				91EBC38B22A0841100EEE2F1 /* UITableView+ReusableView.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		91EBC38F22A095A400EEE2F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				91EBC39122A0970D00EEE2F1 /* FCBarcelona.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91EBC39222A0970D00EEE2F1 /* FCBarcelona.ttf in Resources */,
 				91EBC37022A03BF400EEE2F1 /* LaunchScreen.storyboard in Resources */,
 				91EBC38322A0432100EEE2F1 /* Squad.storyboard in Resources */,
 				91EBC36D22A03BF400EEE2F1 /* Assets.xcassets in Resources */,
@@ -153,10 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91EBC38522A07F6C00EEE2F1 /* PlayerCell.swift in Sources */,
+				91EBC38E22A0863300EEE2F1 /* PlayerViewModel.swift in Sources */,
 				91EBC36822A03BF200EEE2F1 /* ViewController.swift in Sources */,
+				91EBC38C22A0841100EEE2F1 /* UITableView+ReusableView.swift in Sources */,
 				91EBC38022A03F8800EEE2F1 /* Theme.swift in Sources */,
+				91EBC38A22A0832500EEE2F1 /* ReusableView.swift in Sources */,
+				91EBC38722A0801000EEE2F1 /* SquadViewController.swift in Sources */,
 				91EBC36622A03BF200EEE2F1 /* AppDelegate.swift in Sources */,
-				91EBC37E22A03EC700EEE2F1 /* PlayerResultCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
