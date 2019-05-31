@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 struct Theme {
-
+//THEME
     static func apply(to window: UIWindow) {
 
         //Request a list of fonts available to determine the name of custom fonts
