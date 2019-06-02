@@ -1,0 +1,6 @@
+framework module Pods_BarcaSquad {
+  umbrella header "Pods-BarcaSquad-umbrella.h"
+
+  export *
+  module * { export * }
+}
