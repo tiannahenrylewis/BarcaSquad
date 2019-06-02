@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -62,7 +62,6 @@
 				4B531B4E60DBC42A4084D255 /* Pods-BarcaSquad.debug.xcconfig */,
 				4E110473E452BCA5C0E3FB5C /* Pods-BarcaSquad.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -171,6 +170,7 @@
 				TargetAttributes = {
 					91EBC36122A03BF200EEE2F1 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -417,7 +417,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiannahenrylewis.BarcaSquad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -436,7 +436,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiannahenrylewis.BarcaSquad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
