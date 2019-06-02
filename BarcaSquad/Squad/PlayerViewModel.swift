@@ -10,6 +10,6 @@ import Foundation
 
 struct PlayerViewModel {
     let name: String
-    let imageURL: URL?
+    let playerImageURL: URL?
     let position: String
 }

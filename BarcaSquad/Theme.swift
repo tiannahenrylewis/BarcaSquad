@@ -14,10 +14,10 @@ struct Theme {
     static func apply(to window: UIWindow) {
 
         //Request a list of fonts available to determine the name of custom fonts
-        for family in UIFont.familyNames.sorted() {
-            let names = UIFont.fontNames(forFamilyName: family)
-            print("Family: \(family) Font names: \(names)")
-        }
+//        for family in UIFont.familyNames.sorted() {
+//            let names = UIFont.fontNames(forFamilyName: family)
+//            print("Family: \(family) Font names: \(names)")
+//        }
 
         window.tintColor = Colours.garnet
 
