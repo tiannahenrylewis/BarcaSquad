@@ -23,46 +23,58 @@ class FCBarcelonaAPI {
         self.session = session
     }
 
-    func fetchPlayerList(completion: @escaping (Result<Data, APIError>) -> Void) {
+    func fetchPlayerList(completion: @escaping (Result<Response, APIError>) -> Void) {
         let path = "players"
         let url = baseURL.appendingPathComponent(path)
         let request = URLRequest(url: url)
-        perform(request: request, completion: completion)
+        perform(request: request) { result in
+            switch result {
+            case .success(let data):
+
+                //If we got data we now must decode it, done inside a do catch block
+                do {
+                    let jsonDecoder = JSONDecoder()
+                    let object = try jsonDecoder.decode(Response.self, from: data)
+                    DispatchQueue.main.async {
+                        completion(.success(object))
+                    }
+                } catch {
+                    //RESUME 6:05
+                }
+
+            case .failure(let error):
+                DispatchQueue.main.async {
+                    completion(.failure(error))
+                }
+            }
+        }
     }
 
     private func perform(request: URLRequest, completion: @escaping (Result<Data, APIError>) -> Void) {
         let task = session.dataTask(with: request) { data, response, error in
             if let error = error {
-                DispatchQueue.main.async {
-                    completion(.failure(.networkingError(error)))
-                }
+                completion(.failure(.networkingError(error)))
                 return
             }
 
             guard let http = response as? HTTPURLResponse, let data = data else {
-                DispatchQueue.main.async {
-                    completion(.failure(.invalidResponse))
-                }
+                completion(.failure(.invalidResponse))
                 return
             }
 
             switch http.statusCode {
 
             case 200:
-                DispatchQueue.main.async {
-                    completion(.success(data))
-                }
+                completion(.success(data))
 
             case 400...499:
                 let body = String(data: data, encoding: .utf8)
-                DispatchQueue.main.async {
-                    completion(.failure(.requestError(http.statusCode, body ?? "<no body>")))
-                }
+                completion(.failure(.requestError(http.statusCode, body ?? "<no body>")))
+
 
             case 500...599:
-                DispatchQueue.main.async {
-                    completion(.failure(.serverError))
-                }
+                completion(.failure(.serverError))
+
 
             default:
                 fatalError("Unhandled HTTP status code: \(http.statusCode)")
@@ -70,5 +82,14 @@ class FCBarcelonaAPI {
         }
         task.resume()
     }
+}
 
+extension FCBarcelonaAPI {
+    struct Response : Decodable {
+        let players : [Players]
+    }
+
+    struct Players : Decodable {
+        let fullName: String
+    }
 }

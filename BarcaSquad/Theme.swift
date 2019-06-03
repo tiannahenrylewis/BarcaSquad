@@ -24,9 +24,11 @@ struct Theme {
         //let tabBar = UITabBar.appearance()
 
         let navBar = UINavigationBar.appearance()
-        navBar.prefersLargeTitles = true
-//        navBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Arial", size: 20)!]
 
+        //Customize the Navigation Bar Titles
+        navBar.prefersLargeTitles = true
+        navBar.largeTitleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "F.C.-BARCELONA", size: 60)]
+        print()
     }
 
     struct Colours {
