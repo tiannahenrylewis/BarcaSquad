@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		916BD07722A4A871006611E6 /* FCBarcelonaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916BD07622A4A871006611E6 /* FCBarcelonaAPI.swift */; };
 		91EBC36622A03BF200EEE2F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBC36522A03BF200EEE2F1 /* AppDelegate.swift */; };
 		91EBC36822A03BF200EEE2F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBC36722A03BF200EEE2F1 /* ViewController.swift */; };
 		91EBC36B22A03BF200EEE2F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EBC36922A03BF200EEE2F1 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		4B531B4E60DBC42A4084D255 /* Pods-BarcaSquad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarcaSquad.debug.xcconfig"; path = "Target Support Files/Pods-BarcaSquad/Pods-BarcaSquad.debug.xcconfig"; sourceTree = "<group>"; };
 		4E110473E452BCA5C0E3FB5C /* Pods-BarcaSquad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarcaSquad.release.xcconfig"; path = "Target Support Files/Pods-BarcaSquad/Pods-BarcaSquad.release.xcconfig"; sourceTree = "<group>"; };
+		916BD07622A4A871006611E6 /* FCBarcelonaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCBarcelonaAPI.swift; sourceTree = "<group>"; };
 		91EBC36222A03BF200EEE2F1 /* BarcaSquad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcaSquad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EBC36522A03BF200EEE2F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91EBC36722A03BF200EEE2F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		916BD07522A424AE006611E6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				916BD07622A4A871006611E6 /* FCBarcelonaAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		91EBC35922A03BF200EEE2F1 = {
 			isa = PBXGroup;
 			children = (
@@ -94,10 +104,11 @@
 		91EBC36422A03BF200EEE2F1 /* BarcaSquad */ = {
 			isa = PBXGroup;
 			children = (
+				916BD07522A424AE006611E6 /* API */,
+				91EBC38122A042F100EEE2F1 /* Squad */,
 				91EBC36522A03BF200EEE2F1 /* AppDelegate.swift */,
 				91EBC37F22A03F8800EEE2F1 /* Theme.swift */,
 				91EBC36722A03BF200EEE2F1 /* ViewController.swift */,
-				91EBC38122A042F100EEE2F1 /* Squad */,
 				91EBC36922A03BF200EEE2F1 /* Main.storyboard */,
 				91EBC36E22A03BF400EEE2F1 /* LaunchScreen.storyboard */,
 				91EBC37122A03BF400EEE2F1 /* Info.plist */,
@@ -262,6 +273,7 @@
 				91EBC38A22A0832500EEE2F1 /* ReusableView.swift in Sources */,
 				91EBC38722A0801000EEE2F1 /* SquadViewController.swift in Sources */,
 				91EBC36622A03BF200EEE2F1 /* AppDelegate.swift in Sources */,
+				916BD07722A4A871006611E6 /* FCBarcelonaAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
