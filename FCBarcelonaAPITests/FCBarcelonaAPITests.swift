@@ -28,9 +28,9 @@ class FCBarcelonaAPITests: XCTestCase {
         client.fetchPlayerList { result in
             exp.fulfill()
             switch result {
-            case .success(let data):
-                let body = String(data: data, encoding: .utf8)!
-                print(body)
+            case .success(let response):
+                XCTAssert(response.players.count != 0)
+                print(response.players)
 
             case .failure(let error):
                 XCTFail(error.localizedDescription)
