@@ -37,7 +37,7 @@ class PlayerCell : UITableViewCell {
         // TODO: Handle Player Image configuration
         if let url = player.playerImageURL {
             let options : KingfisherOptionsInfo = [
-                .transition(.fade(0.5))
+                .transition(.fade(0.2))
             ]
             playerImageView.kf.setImage(with: url, options: options)
         }
