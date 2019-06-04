@@ -13,6 +13,7 @@ enum APIError : Error {
     case serverError //HTTP 5xx
     case requestError(Int, String) //HTTP 4xx
     case invalidResponse
+    case decodingError(DecodingError)
 }
 
 class FCBarcelonaAPI {
@@ -27,19 +28,30 @@ class FCBarcelonaAPI {
         let path = "players"
         let url = baseURL.appendingPathComponent(path)
         let request = URLRequest(url: url)
-        perform(request: request) { result in
+
+        perform(request: request, completion: parseDecodable(completion: completion))
+    }
+
+    //function that returns a function
+    func parseDecodable<T : Decodable>(completion: @escaping (Result<T, APIError>) -> Void) -> (Result<Data, APIError>) -> Void {
+        return { result in
             switch result {
             case .success(let data):
 
                 //If we got data we now must decode it, done inside a do catch block
                 do {
                     let jsonDecoder = JSONDecoder()
-                    let object = try jsonDecoder.decode(Response.self, from: data)
+                    let object = try jsonDecoder.decode(T.self, from: data)
                     DispatchQueue.main.async {
                         completion(.success(object))
                     }
-                } catch {
-                    //RESUME 6:05
+                } catch let decodingError as DecodingError {
+                    DispatchQueue.main.async {
+                        completion(.failure(.decodingError(decodingError)))
+                    }
+                }
+                catch {
+                    fatalError("Unhandled Error Raised")
                 }
 
             case .failure(let error):
@@ -91,5 +103,7 @@ extension FCBarcelonaAPI {
 
     struct Players : Decodable {
         let fullName: String
+        let position: String
+        let imageURL: String
     }
 }

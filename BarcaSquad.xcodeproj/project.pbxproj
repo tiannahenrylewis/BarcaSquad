@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		916BD07722A4A871006611E6 /* FCBarcelonaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916BD07622A4A871006611E6 /* FCBarcelonaAPI.swift */; };
+		916BD08D22A5D6FE006611E6 /* FCBarcelonaAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916BD08C22A5D6FE006611E6 /* FCBarcelonaAPITests.swift */; };
 		91EBC36622A03BF200EEE2F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBC36522A03BF200EEE2F1 /* AppDelegate.swift */; };
 		91EBC36822A03BF200EEE2F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBC36722A03BF200EEE2F1 /* ViewController.swift */; };
 		91EBC36B22A03BF200EEE2F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EBC36922A03BF200EEE2F1 /* Main.storyboard */; };
@@ -24,10 +25,23 @@
 		E20E18EFA8067615BA59B660 /* Pods_BarcaSquad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D4305689ADFFC409E82BE5 /* Pods_BarcaSquad.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		916BD08F22A5D6FE006611E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91EBC35A22A03BF200EEE2F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91EBC36122A03BF200EEE2F1;
+			remoteInfo = BarcaSquad;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		4B531B4E60DBC42A4084D255 /* Pods-BarcaSquad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarcaSquad.debug.xcconfig"; path = "Target Support Files/Pods-BarcaSquad/Pods-BarcaSquad.debug.xcconfig"; sourceTree = "<group>"; };
 		4E110473E452BCA5C0E3FB5C /* Pods-BarcaSquad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarcaSquad.release.xcconfig"; path = "Target Support Files/Pods-BarcaSquad/Pods-BarcaSquad.release.xcconfig"; sourceTree = "<group>"; };
 		916BD07622A4A871006611E6 /* FCBarcelonaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCBarcelonaAPI.swift; sourceTree = "<group>"; };
+		916BD08A22A5D6FD006611E6 /* FCBarcelonaAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FCBarcelonaAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		916BD08C22A5D6FE006611E6 /* FCBarcelonaAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCBarcelonaAPITests.swift; sourceTree = "<group>"; };
+		916BD08E22A5D6FE006611E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91EBC36222A03BF200EEE2F1 /* BarcaSquad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcaSquad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EBC36522A03BF200EEE2F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91EBC36722A03BF200EEE2F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +61,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		916BD08722A5D6FD006611E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91EBC35F22A03BF200EEE2F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,10 +104,20 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		916BD08B22A5D6FE006611E6 /* FCBarcelonaAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				916BD08C22A5D6FE006611E6 /* FCBarcelonaAPITests.swift */,
+				916BD08E22A5D6FE006611E6 /* Info.plist */,
+			);
+			path = FCBarcelonaAPITests;
+			sourceTree = "<group>";
+		};
 		91EBC35922A03BF200EEE2F1 = {
 			isa = PBXGroup;
 			children = (
 				91EBC36422A03BF200EEE2F1 /* BarcaSquad */,
+				916BD08B22A5D6FE006611E6 /* FCBarcelonaAPITests */,
 				91EBC36322A03BF200EEE2F1 /* Products */,
 				087253829ED402491495BBAB /* Pods */,
 				6A028FECD11D5A42227B482A /* Frameworks */,
@@ -97,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				91EBC36222A03BF200EEE2F1 /* BarcaSquad.app */,
+				916BD08A22A5D6FD006611E6 /* FCBarcelonaAPITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,6 +182,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		916BD08922A5D6FD006611E6 /* FCBarcelonaAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 916BD09322A5D6FE006611E6 /* Build configuration list for PBXNativeTarget "FCBarcelonaAPITests" */;
+			buildPhases = (
+				916BD08622A5D6FD006611E6 /* Sources */,
+				916BD08722A5D6FD006611E6 /* Frameworks */,
+				916BD08822A5D6FD006611E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				916BD09022A5D6FE006611E6 /* PBXTargetDependency */,
+			);
+			name = FCBarcelonaAPITests;
+			productName = FCBarcelonaAPITests;
+			productReference = 916BD08A22A5D6FD006611E6 /* FCBarcelonaAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		91EBC36122A03BF200EEE2F1 /* BarcaSquad */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91EBC37422A03BF400EEE2F1 /* Build configuration list for PBXNativeTarget "BarcaSquad" */;
@@ -175,10 +225,14 @@
 		91EBC35A22A03BF200EEE2F1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Tianna Henry-Lewis";
 				TargetAttributes = {
+					916BD08922A5D6FD006611E6 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 91EBC36122A03BF200EEE2F1;
+					};
 					91EBC36122A03BF200EEE2F1 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1020;
@@ -199,11 +253,19 @@
 			projectRoot = "";
 			targets = (
 				91EBC36122A03BF200EEE2F1 /* BarcaSquad */,
+				916BD08922A5D6FD006611E6 /* FCBarcelonaAPITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		916BD08822A5D6FD006611E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91EBC36022A03BF200EEE2F1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,6 +323,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		916BD08622A5D6FD006611E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916BD08D22A5D6FE006611E6 /* FCBarcelonaAPITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91EBC35E22A03BF200EEE2F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,6 +348,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		916BD09022A5D6FE006611E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91EBC36122A03BF200EEE2F1 /* BarcaSquad */;
+			targetProxy = 916BD08F22A5D6FE006611E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		91EBC36922A03BF200EEE2F1 /* Main.storyboard */ = {
@@ -299,6 +377,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		916BD09122A5D6FE006611E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9WDM8695CA;
+				INFOPLIST_FILE = FCBarcelonaAPITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiannahenrylewis.FCBarcelonaAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarcaSquad.app/BarcaSquad";
+			};
+			name = Debug;
+		};
+		916BD09222A5D6FE006611E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9WDM8695CA;
+				INFOPLIST_FILE = FCBarcelonaAPITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiannahenrylewis.FCBarcelonaAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarcaSquad.app/BarcaSquad";
+			};
+			name = Release;
+		};
 		91EBC37222A03BF400EEE2F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -456,6 +576,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		916BD09322A5D6FE006611E6 /* Build configuration list for PBXNativeTarget "FCBarcelonaAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916BD09122A5D6FE006611E6 /* Debug */,
+				916BD09222A5D6FE006611E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		91EBC35D22A03BF200EEE2F1 /* Build configuration list for PBXProject "BarcaSquad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

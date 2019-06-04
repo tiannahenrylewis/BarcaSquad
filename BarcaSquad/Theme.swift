@@ -27,8 +27,8 @@ struct Theme {
 
         //Customize the Navigation Bar Titles
         navBar.prefersLargeTitles = true
-        navBar.largeTitleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "F.C.-BARCELONA", size: 60)]
-        print()
+        //navBar.largeTitleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "F.C.-BARCELONA", size: 60)]
+        
     }
 
     struct Colours {
